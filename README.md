@@ -1,4 +1,4 @@
-# lebelleangelique
+# LeBelleAngelique
 
 ## Project setup
 ```
