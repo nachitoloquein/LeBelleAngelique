@@ -1,5 +1,7 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '@/views/Home.vue'
+import About from '@/views/About.vue'
+import Login from '@/views/Login.vue'
 
 const routes = [
   {
@@ -8,19 +10,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
+    path: '/About',
     name: 'About',
-    component: () => import('../views/About.vue')
+    component: About
   },
   {
-    path: '/login',
+    path: '/Login',
     name: 'Login',
-    component: () => import('../views/Login.vue')
+    component: Login
   }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 
